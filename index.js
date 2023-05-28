@@ -15,7 +15,7 @@ btnCalc.addEventListener('click', () => {
 		
 		Swal.fire({
 		  icon: 'success',
-		  title: `Total a pagar: ${totalFinal}`,
+		  title: `Total a pagar: ${(parseFloat(valorTotal) + parseFloat(taxaServico)).toFixed(2)}`,
 		  html: `Uma conta de R$ ${valorTotal} + 
 		   o acréscimo de R$ ${taxaServico}
 		   do garçom resultará no total de R$ ${(parseFloat(valorTotal) + parseFloat(taxaServico)).toFixed(2)}. 
